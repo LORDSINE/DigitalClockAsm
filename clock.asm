@@ -34,7 +34,9 @@ continue_loop:
 
     mov ax, 0600h
     mov bh, 07h
+    mov cx, 0000h
     mov dx, 184Fh
+    int 10h
 
     pop dx 
     pop cx
