@@ -2,7 +2,7 @@
 .stack 100h
 .data
     prevSec db 0
-    time db '      00:00:00      $'
+    timeStr db '      00:00:00      $'
 
 .code
 main:
