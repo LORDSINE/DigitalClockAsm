@@ -46,4 +46,9 @@ This program continuously fetches and displays the current system time in the fo
 - **ASCII conversion:** Custom subroutine to convert binary values to two ASCII digits.
 - **Cursor positioning:** BIOS interrupt to center output.
 
+---
+## Output 
+This is the screenshot of the program output.
+![Digital Clock](./clk.png) 
+
 For detailed explanation of the code, see the [Documentation](Documentation.md).
