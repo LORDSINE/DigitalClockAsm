@@ -54,8 +54,8 @@ continue_loop:
 
     mov al, dh
     call ConvertToAscii
-    mov [timeStr+13], ah
-    mov [timeStr+14], al
+    mov [timeStr+12], ah
+    mov [timeStr+13], al
 
     ; center align
     mov ah, 02h
