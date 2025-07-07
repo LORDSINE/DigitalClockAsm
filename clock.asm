@@ -32,6 +32,7 @@ continue_loop:
     push cx
     push dx
 
+    ;clear screen
     mov ax, 0600h
     mov bh, 07h
     mov cx, 0000h
@@ -43,19 +44,20 @@ continue_loop:
 
     mov al, ch  
     call ConvertToAscii
-    mov [timeStr], ah
-    mov [timeStr+1], al
-
-    mov al, cl 
-    call ConvertToAscii
-    mov [timeStr+3], ah
-    mov [timeStr+4], al
-
-    mov al, dh
-    call ConvertToAscii
     mov [timeStr+6], ah
     mov [timeStr+7], al
 
+    mov al, cl 
+    call ConvertToAscii
+    mov [timeStr+9], ah
+    mov [timeStr+10], al
+
+    mov al, dh
+    call ConvertToAscii
+    mov [timeStr+13], ah
+    mov [timeStr+14], al
+
+    ; center align
     mov ah, 02h
     mov bh, 0
     mov dh, 12
