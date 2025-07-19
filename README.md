@@ -48,7 +48,8 @@ This program continuously fetches and displays the current system time in the fo
 
 ---
 ## Output 
-This is the screenshot of the program output.
 ![Digital Clock](./public/clk.png) 
+
+This is the screenshot of the program output.
 
 For detailed explanation of the code, see the [Documentation](Documentation.md).
